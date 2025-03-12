@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+.all {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.globalnav-out {
+    width: 100%;
+    /* text-align: center; */
+    height: 44px;
+    position: fixed;
+    background-color: rgba(250, 250, 252, .975843);
+    display: flex;
+    justify-content: center;
+}
+
+.globalnav {
+    margin: 0 auto;
+    padding: 0 1.5%;
+    height: 44px;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 834px) {
+    .globalnav {
+        margin: 0 248px;
+        padding: 0 1.5%;
+        height: 44px;
+        align-items: center;
+    }
+}
+
+
+
+.globalnav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px -8px;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.globalnav ul li {
+    list-style: none;
+    padding: 0px 8px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(57, 57, 57);
+    font-weight: 400;
+    cursor: pointer;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.fa-apple {
+    font-size: 18px;
+}
+
+.fa-magnifying-glass,
+.fa-bag-shopping {
+    font-size: 15px;
+    color: rgb(140, 141, 123);
+}
+
+.below-navbar {
+    width: auto;
+    position: absolute;
+    top: 44px;
+    height: 100%;
+    z-index: -100;
+}
+
+.below-navbar-line {
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.below-navbar-line-text {
+    padding: 12px 0;
+    width: 95%;
+    font-size: 14px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* Bg-images section */
+
+.below-navbar-images-and-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.img-and-content-box1 {
+
+    background-color: red;
+    background-image: url("apple images/hero_macbook_air_announce__dqw53b1i7j6u_large.jpg");
+    height: 580px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+        background-size: cover;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.img-and-content-box2 {
+
+    background-color: red;
+    background-image: url("apple images/hero_macstudio_announce__ceq1ppfwmdjm_largetall.jpg");
+    height: 580px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+        background-size: cover;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.img-and-content-box3 {
+
+    background-color: red;
+    background-image: url("apple images/hero_ipad_air_preorder__ftn4a0m2i0uq_large.jpg");
+    height: 580px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+        background-size: cover;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.img-and-content-box1-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 225px;
+}
+
+.img-and-content-box1-content h1 {
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 550;
+    letter-spacing: -.005em;
+
+}
+
+.generaltxt {
+    font-size: 22px;
+    line-height: 1.0999;
+    letter-spacing: -.005em;
+}
+
+.special-txt1 {
+    color: grey;
+    font-size: 17px;
+    letter-spacing: -.005em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.special-txt2 {
+    color: rgb(155, 153, 153);
+    font-size: 15px;
+    letter-spacing: -.005em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+/* btns */
+.img-and-content-box1-content-btn {
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-and-content-box1-cont-btn-btn1 {
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #0071E3;
+    color: white;
+    cursor: pointer;
+}
+
+.img-and-content-box1-cont-btn-btn2 {
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #0071E3;
+    cursor: pointer;
+}
+
+.img-and-content-box1-cont-btn-btn2:hover {
+    background-color: #0071E3;
+    color: white;
+}
+
+
+.multicolortxt {
+    font-size: 1.6em;
+    font-weight: bold;
+    background: linear-gradient(94deg, #0087e7, #0090F7, #BA62FC, #F2416B, #F55600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+
+/* Utility */
+#iPad-air {
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+}
+
+#iPad-air #ipad {
+    font-weight: bold;
+    color: black;
+}
+
+#iPad-air #air {
+    font-style: italic;
+    color: #3d90f0;
+}
+
+
+
+.splited-sec {
+    /* background-color: rgb(237, 189, 189); */
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3,1fr);
+    padding: 10px 0;
+
+    
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 580PX;
+    align-items: center;
+    padding-top: 30px;
+}
+#box1{
+    background-image: url("apple images/promo_ipad__fioegapg12qi_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#box2{
+    background-image: url("apple images/promo_iphone_family__ofrg9zdy1teq_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box3{
+    background-image: url("apple images/promo_ipadpro_avail__s271j89g8kii_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    line-height: 40px;
+}
+#box4{
+    background-image: url("apple images/promo_apple_watch_series_10_avail__b9etp10v9tn6_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box5{
+    background-image: url("apple images/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box6{
+    background-image: url("apple images/promo_iphone_tradein__bugw15ka691e_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    font-size: 40px;
+}
+.general{
+    font-size: 20px;
+    width: 400px;
+}
+.box-item{
+    position: relative;
+    top: 0;
+}
+
+.mini-change{
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.box3_btn2{
+    background-color: black;
+    border: 2px solid #0071E3;
+    color: #0071E3;
+} 
+
+/* Footer */
+
+.globalfoot{
+    width: 100%;
+    height: auto;;
+    background-color: rgb(244, 243, 243);
+    margin-top: 15px;
+    padding-top: 20px;
+}
+.footer-cover{
+    margin: 0px 20rem;
+    padding:0 50px;
+}
+.sec1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+ li{
+    padding: 0 0 10px;
+    list-style: none;
+    font-size: 10px;
+    line-height: 1.33333333;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: rgba(0,0,0,0.56);
+}
+
+
+.sec2-content{
+    display: flex;
+justify-content: space-between;
+column-gap: 10px;
+}
+
+.sec2-content-li-hed{
+    color: black;
+    font-weight: 400;
+    font-style: oblique;
+}
+.sec2-content-li>ul>li{
+   cursor: pointer;
+}
+.sec2-content-li>ul>li:hover{
+    text-decoration: underline;
+}
+
+
+/* sec 3 */
+.sec3{
+    padding: 10px 5px;
+
+    font-size: 10px;
+    line-height: 1.33333333;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: rgba(0,0,0,0.56);
+}
+.sec3-contenet1{
+    margin-bottom: 15px;
+}
+
+.sec3-content2{
+   display: grid;
+  grid-template-columns: 10fr 1fr;
+
+}
+
+.sec3-cont3-box1{
+    display: flex;
+    column-gap: 50px;
+}
+.sec3-cont3-box1>ul{
+    display: flex;
+    column-gap: 5px;
+}
+.sec3-cont3-box1>ul>li:nth-child(odd):hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
